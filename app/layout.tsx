@@ -18,11 +18,27 @@ const mulish = Mulish({
 });
 
 export const metadata: Metadata = {
-  title: "Counseling in Newbury Park, CA | Conejo Valley Family Counseling",
+  title: "Dr. Maya Reynolds, PsyD | Clinical Psychologist in Santa Monica, CA",
   description:
-    "Counseling for adults, couples, and children in Newbury & across CA. EMDR, trauma & dissociation, special needs parenting, anxiety, & more. In-person & online.",
-  icons: {
-    icon: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/9f1bb212-4047-4ddb-a144-79c1f9704dfe/favicon.ico?format=100w",
+    "Warm, grounded psychotherapy for high-achieving adults navigating anxiety, trauma, and burnout in Santa Monica, California and statewide via secure telehealth. Integrating CBT, EMDR, and somatic practices.",
+  keywords: [
+    "therapist in Santa Monica",
+    "therapy in Santa Monica",
+    "anxiety therapy in Santa Monica",
+    "trauma therapy in Santa Monica",
+    "EMDR in Santa Monica",
+    "therapy for adults",
+    "telehealth therapy in California",
+    "Dr. Maya Reynolds",
+    "clinical psychologist Santa Monica",
+  ],
+  authors: [{ name: "Dr. Maya Reynolds, PsyD" }],
+  openGraph: {
+    title: "Dr. Maya Reynolds, PsyD | Clinical Psychologist in Santa Monica, CA",
+    description:
+      "Warm, grounded psychotherapy for adults navigating anxiety, trauma, and burnout in Santa Monica and statewide via secure telehealth.",
+    type: "website",
+    locale: "en_US",
   },
 };
 
@@ -33,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${mulish.variable}`}>
-      <body className="font-sans antialiased text-[#2B2B2B] bg-[#EFECE6] selection:bg-[#86B3B3]/20 selection:text-[#2B2B2B]">
+      <body className="font-sans antialiased text-[#1F2421] bg-[#FAF8F5] selection:bg-[#C47D63]/20 selection:text-[#1F2421]">
         {children}
       </body>
     </html>

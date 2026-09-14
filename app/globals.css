@@ -9,31 +9,46 @@
 }
 
 :root {
-  --color-bg-sand: #EFECE6;
-  --color-bg-white: #FFFFFF;
-  --color-text-charcoal: #2B2B2B;
-  --color-text-muted: #555555;
-  --color-teal-accent: #86B3B3;
-  --color-teal-dark: #64938D;
-  --color-border-subtle: #E5E0D8;
+  --color-forest: #2C3E35;
+  --color-forest-dark: #1F2D26;
+  --color-forest-deep: #16221C;
+  --color-cream: #FAF8F5;
+  --color-cream-warm: #F3EFEA;
+  --color-cream-muted: #EAE4DC;
+  --color-terracotta: #C47D63;
+  --color-terracotta-dark: #AD684F;
+  --color-terracotta-soft: #DDA18E;
+  --color-charcoal: #1F2421;
+  --color-muted: #565C58;
+  --color-border: #E5E0D8;
 }
 
 @theme {
-  --color-sand: #EFECE6;
-  --color-charcoal: #2B2B2B;
-  --color-muted: #555555;
-  --color-teal-accent: #86B3B3;
-  --color-teal-dark: #64938D;
-  --color-border-subtle: #E5E0D8;
+  --color-forest: #2C3E35;
+  --color-forest-dark: #1F2D26;
+  --color-forest-deep: #16221C;
+  --color-cream: #FAF8F5;
+  --color-cream-warm: #F3EFEA;
+  --color-cream-muted: #EAE4DC;
+  --color-terracotta: #C47D63;
+  --color-terracotta-dark: #AD684F;
+  --color-terracotta-soft: #DDA18E;
+  --color-charcoal: #1F2421;
+  --color-muted: #565C58;
+  --color-border: #E5E0D8;
 
   --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
   --font-sans: var(--font-mulish), Mulish, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-script: "PrintedMoments", "Caveat", cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #EFECE6;
-  color: #2B2B2B;
+  background-color: #FAF8F5;
+  color: #1F2421;
   font-family: var(--font-mulish), Mulish, -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,14 +56,15 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  letter-spacing: -0.01em;
 }
 
-/* Custom script style to match original Squarespace exactly */
+/* Elegant script accent */
 .font-script {
   font-family: "PrintedMoments", "Caveat", cursive !important;
   font-style: normal !important;
   font-weight: normal !important;
-  color: #86B3B3;
+  color: #C47D63;
   line-height: 0.8;
   display: inline-block;
 }
@@ -63,41 +79,118 @@ h1, h2, h3, h4 {
   bottom: -4px;
   left: 0;
   width: 0;
-  height: 1px;
-  background-color: #2B2B2B;
-  transition: width 0.3s ease;
+  height: 1.5px;
+  background-color: #2C3E35;
+  transition: width 0.25s ease;
 }
 .nav-link-hover:hover::after {
   width: 100%;
 }
 
-/* Underlined action links matching Squarespace */
+/* Editorial underlined CTA links */
 .cta-underline {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #2B2B2B;
-  padding-bottom: 2px;
-  transition: opacity 0.2s ease;
+  border-bottom: 1px solid #C47D63;
+  padding-bottom: 3px;
+  transition: all 0.2s ease;
+  color: #2C3E35;
 }
 .cta-underline:hover {
-  opacity: 0.7;
+  color: #C47D63;
+  border-bottom-color: #2C3E35;
 }
 
-/* Pill buttons */
-.btn-pill-outline {
+/* Primary Forest Green Pill Button */
+.btn-forest {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #2B2B2B;
+  background-color: #2C3E35;
+  color: #FAF8F5;
+  border: 1px solid #2C3E35;
   border-radius: 9999px;
-  padding: 0.55rem 1.85rem;
+  padding: 0.75rem 2.2rem;
   font-size: 0.75rem;
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(31, 45, 38, 0.08);
 }
-.btn-pill-outline:hover {
-  background-color: #2B2B2B;
-  color: #FFFFFF;
+.btn-forest:hover {
+  background-color: #1F2D26;
+  border-color: #1F2D26;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(31, 45, 38, 0.15);
+}
+
+/* Terracotta Accent Pill Button */
+.btn-terracotta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C47D63;
+  color: #FAF8F5;
+  border: 1px solid #C47D63;
+  border-radius: 9999px;
+  padding: 0.75rem 2.2rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(196, 125, 99, 0.12);
+}
+.btn-terracotta:hover {
+  background-color: #AD684F;
+  border-color: #AD684F;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(196, 125, 99, 0.22);
+}
+
+/* Outline Forest Pill Button */
+.btn-outline-forest {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #2C3E35;
+  border: 1px solid #2C3E35;
+  border-radius: 9999px;
+  padding: 0.75rem 2.2rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-outline-forest:hover {
+  background-color: #2C3E35;
+  color: #FAF8F5;
+  transform: translateY(-1px);
+}
+
+/* Outline Cream Pill Button (for dark backgrounds) */
+.btn-outline-cream {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #FAF8F5;
+  border: 1px solid rgba(250, 248, 245, 0.6);
+  border-radius: 9999px;
+  padding: 0.75rem 2.2rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-outline-cream:hover {
+  background-color: #FAF8F5;
+  color: #1F2D26;
+  border-color: #FAF8F5;
+  transform: translateY(-1px);
 }

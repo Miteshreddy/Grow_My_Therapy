@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { drMayaData } from '@/data/drMayaContent';
 
 export default function HowWeWork() {
   return (
-    <section id="how-we-work" className="w-full bg-[#EFECE6] py-16 sm:py-20 lg:py-28">
+    <section id="approach" className="w-full bg-[#F3EFEA] py-16 sm:py-20 lg:py-28">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-14 xl:gap-20">
           
@@ -12,21 +12,22 @@ export default function HowWeWork() {
           <div className="w-full lg:w-[58%] xl:w-[60%] flex flex-col justify-between">
             
             {/* Eyebrow */}
-            <p className="text-[11px] sm:text-[12px] tracking-[0.18em] uppercase text-[#555555] font-medium mb-5 sm:mb-6">
-              HOW WE WORK
+            <p className="text-[11px] sm:text-[12px] tracking-[0.2em] uppercase text-[#C47D63] font-medium mb-4 sm:mb-5">
+              {drMayaData.methods.eyebrow}
             </p>
 
             {/* H2 Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-light leading-[1.25] text-[#2B2B2B] font-serif mb-6 lg:mb-10">
-              We’re here to make a difference.
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-normal leading-[1.22] text-[#1F2421] font-serif mb-6 lg:mb-8">
+              Evidence-based therapy tailored to both your{' '}
+              <span className="italic font-light text-[#2C3E35]">mind and nervous system</span>.
             </h2>
 
             {/* Mobile Dunes Image: appears between H2 and body text on mobile (< lg) */}
             <div className="block lg:hidden mb-8">
-              <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
+              <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-sm overflow-hidden shadow-sm">
                 <Image
                   src="/images/how-we-work-dunes.jpg"
-                  alt="Mother and daughter dancing joyfully on sandy dunes"
+                  alt="Coastal dunes reflecting natural calm and grounded regulation"
                   fill
                   sizes="100vw"
                   className="object-cover object-center"
@@ -35,49 +36,73 @@ export default function HowWeWork() {
               </div>
             </div>
 
-            {/* 2-Column Body Paragraphs */}
+            {/* 2-Column Body Modality Descriptions */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-12 mb-8 sm:mb-10">
-              {/* Column 1 */}
-              <div>
-                <p className="font-sans text-[11px] sm:text-[12px] tracking-[0.06em] uppercase font-medium text-[#2B2B2B] leading-relaxed mb-4 sm:mb-5 max-w-[340px]">
-                  THE CLIENTS WE WORK WITH ARE BALANCING SO MANY THINGS AT ONCE, IT’S OFTEN HARD FOR THEM TO PUT THEMSELVES FIRST.
-                </p>
-                <p className="text-[15px] sm:text-[16px] text-[#444444] font-light leading-[1.85]">
-                  Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won’t find anything “one-size-fits-all” here.) If you’re ready to do the work, we’re ready to help.
-                </p>
+              {/* Column 1: CBT & EMDR */}
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-sans text-[12px] tracking-[0.12em] uppercase font-semibold text-[#2C3E35] mb-2">
+                    Cognitive Behavioral Therapy (CBT)
+                  </h4>
+                  <p className="text-[14px] sm:text-[15px] text-[#565C58] font-light leading-[1.8]">
+                    We examine automatic thoughts, perfectionistic standards, and catastrophic overthinking, giving you clear cognitive frameworks to step back and reframe distress.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-sans text-[12px] tracking-[0.12em] uppercase font-semibold text-[#2C3E35] mb-2">
+                    EMDR Therapy
+                  </h4>
+                  <p className="text-[14px] sm:text-[15px] text-[#565C58] font-light leading-[1.8]">
+                    A structured, research-backed protocol that helps reprocess painful memories, easing the emotional and somatic charge so they no longer disrupt your present life.
+                  </p>
+                </div>
               </div>
 
-              {/* Column 2 */}
-              <div className="pt-0 md:pt-1">
-                <p className="text-[15px] sm:text-[16px] text-[#444444] font-light leading-[1.85]">
-                  Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you’ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what’s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.
-                </p>
+              {/* Column 2: Mindfulness & Somatic Techniques */}
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-sans text-[12px] tracking-[0.12em] uppercase font-semibold text-[#2C3E35] mb-2">
+                    Mindfulness-Based Practices
+                  </h4>
+                  <p className="text-[14px] sm:text-[15px] text-[#565C58] font-light leading-[1.8]">
+                    Cultivating real-time awareness and non-judgmental acceptance to untangle from panic, emotional reactivity, and constant internal urgency.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-sans text-[12px] tracking-[0.12em] uppercase font-semibold text-[#2C3E35] mb-2">
+                    Body-Oriented (Somatic) Work
+                  </h4>
+                  <p className="text-[14px] sm:text-[15px] text-[#565C58] font-light leading-[1.8]">
+                    Because chronic stress lives in the body, we incorporate physiological regulation to help you release physical tension, improve sleep, and feel grounded.
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Underlined CTA Link */}
             <div>
-              <Link
-                href="/therapists-newbury-park"
-                className="cta-underline text-[11px] sm:text-[12px] tracking-[0.18em] uppercase font-medium text-[#2B2B2B]"
+              <a
+                href="#office"
+                className="cta-underline text-[11px] sm:text-[12px] tracking-[0.18em] uppercase font-medium"
               >
-                LEARN MORE ABOUT US
-              </Link>
+                DISCOVER OUR SANTA MONICA OFFICE &amp; TELEHEALTH
+              </a>
             </div>
 
           </div>
 
           {/* Desktop Dune Photo Column: shown on desktop (lg+), aligned at the top */}
           <div className="hidden lg:block w-full lg:w-[42%] xl:w-[40%] flex-shrink-0">
-            <div className="relative w-full lg:h-[640px] xl:h-[690px] overflow-hidden">
+            <div className="relative w-full lg:h-[620px] xl:h-[660px] rounded-sm overflow-hidden shadow-sm">
               <Image
                 src="/images/how-we-work-dunes.jpg"
-                alt="Mother and daughter dancing joyfully on sandy dunes"
+                alt="Coastal landscape representing calm and grounded emotional health"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover object-center"
                 unoptimized
               />
+              <div className="absolute inset-0 bg-black/5 pointer-events-none" />
             </div>
           </div>
 
