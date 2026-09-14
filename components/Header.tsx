@@ -98,11 +98,11 @@ export default function Header() {
           <button
             onClick={() => setMobileMenuOpen(true)}
             aria-label="Open mobile menu"
-            className="lg:hidden p-2 text-[#2B2B2B] focus:outline-none flex flex-col justify-center gap-1.5 w-9 h-9"
+            className="lg:hidden p-2 text-[#2B2B2B] focus:outline-none flex flex-col justify-center items-center gap-[5px] w-9 h-9"
           >
-            <span className="w-6 h-[1.5px] bg-[#2B2B2B] block"></span>
-            <span className="w-6 h-[1.5px] bg-[#2B2B2B] block"></span>
-            <span className="w-6 h-[1.5px] bg-[#2B2B2B] block"></span>
+            <span className="w-5.5 h-px bg-[#2B2B2B] block"></span>
+            <span className="w-5.5 h-px bg-[#2B2B2B] block"></span>
+            <span className="w-5.5 h-px bg-[#2B2B2B] block"></span>
           </button>
         </div>
       </header>

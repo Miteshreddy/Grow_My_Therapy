@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function HowWeWork() {
   return (
-    <section id="how-we-work" className="w-full bg-[#EFECE6] py-20 lg:py-28">
+    <section id="how-we-work" className="w-full bg-[#EFECE6] py-16 sm:py-20 lg:py-28">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-14 xl:gap-20">
           
@@ -12,20 +12,34 @@ export default function HowWeWork() {
           <div className="w-full lg:w-[58%] xl:w-[60%] flex flex-col justify-between">
             
             {/* Eyebrow */}
-            <p className="text-[11px] sm:text-[12px] tracking-[0.18em] uppercase text-[#555555] font-medium mb-6">
+            <p className="text-[11px] sm:text-[12px] tracking-[0.18em] uppercase text-[#555555] font-medium mb-5 sm:mb-6">
               HOW WE WORK
             </p>
 
             {/* H2 Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-light leading-[1.25] text-[#2B2B2B] font-serif mb-10">
+            <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-light leading-[1.25] text-[#2B2B2B] font-serif mb-6 lg:mb-10">
               We’re here to make a difference.
             </h2>
 
+            {/* Mobile Dunes Image: appears between H2 and body text on mobile (< lg) */}
+            <div className="block lg:hidden mb-8">
+              <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
+                <Image
+                  src="/images/how-we-work-dunes.jpg"
+                  alt="Mother and daughter dancing joyfully on sandy dunes"
+                  fill
+                  sizes="100vw"
+                  className="object-cover object-center"
+                  unoptimized
+                />
+              </div>
+            </div>
+
             {/* 2-Column Body Paragraphs */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-12 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-12 mb-8 sm:mb-10">
               {/* Column 1 */}
               <div>
-                <p className="font-sans text-[11px] sm:text-[12px] tracking-[0.06em] uppercase font-medium text-[#2B2B2B] leading-relaxed mb-5 max-w-[340px]">
+                <p className="font-sans text-[11px] sm:text-[12px] tracking-[0.06em] uppercase font-medium text-[#2B2B2B] leading-relaxed mb-4 sm:mb-5 max-w-[340px]">
                   THE CLIENTS WE WORK WITH ARE BALANCING SO MANY THINGS AT ONCE, IT’S OFTEN HARD FOR THEM TO PUT THEMSELVES FIRST.
                 </p>
                 <p className="text-[15px] sm:text-[16px] text-[#444444] font-light leading-[1.85]">
@@ -53,15 +67,16 @@ export default function HowWeWork() {
 
           </div>
 
-          {/* Right Dune Photo Column - starts aligned at the top with the eyebrow */}
-          <div className="w-full lg:w-[42%] xl:w-[40%] flex-shrink-0 mt-6 lg:mt-0">
-            <div className="relative w-full aspect-[3/4] sm:aspect-[4/5] lg:h-[640px] xl:h-[690px] overflow-hidden">
+          {/* Desktop Dune Photo Column: shown on desktop (lg+), aligned at the top */}
+          <div className="hidden lg:block w-full lg:w-[42%] xl:w-[40%] flex-shrink-0">
+            <div className="relative w-full lg:h-[640px] xl:h-[690px] overflow-hidden">
               <Image
                 src="/images/how-we-work-dunes.jpg"
                 alt="Mother and daughter dancing joyfully on sandy dunes"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover object-center"
+                unoptimized
               />
             </div>
           </div>

@@ -7,7 +7,7 @@ interface SpecialtyCard {
   href: string;
 }
 
-const specialties: SpecialtyCard[] = [
+const column1: SpecialtyCard[] = [
   {
     title: 'Trauma',
     description:
@@ -15,16 +15,19 @@ const specialties: SpecialtyCard[] = [
     href: '/trauma-counseling-newbury-park',
   },
   {
-    title: 'EMDR',
-    description:
-      'Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.',
-    href: '/emdr-therapy-newbury-park',
-  },
-  {
     title: 'Dissociation',
     description:
       'The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we’ll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.',
     href: '/dissociative-identity-disorder-therapist-newbury-park',
+  },
+];
+
+const column2: SpecialtyCard[] = [
+  {
+    title: 'EMDR',
+    description:
+      'Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.',
+    href: '/emdr-therapy-newbury-park',
   },
   {
     title: 'Special Needs Parenting',
@@ -35,6 +38,27 @@ const specialties: SpecialtyCard[] = [
 ];
 
 export default function SpecialtiesGrid() {
+  const renderCard = (item: SpecialtyCard) => (
+    <div key={item.title} className="flex flex-col justify-between items-start">
+      <div>
+        <h4 className="text-2xl sm:text-[26px] font-light text-[#2B2B2B] font-serif mb-4">
+          {item.title}
+        </h4>
+        <p className="text-[15px] sm:text-[16px] text-[#444444] font-light leading-[1.85]">
+          {item.description}
+        </p>
+      </div>
+      <div className="mt-6">
+        <Link
+          href={item.href}
+          className="cta-underline text-[11px] sm:text-[12px] tracking-[0.16em] uppercase font-medium text-[#2B2B2B]"
+        >
+          LEARN MORE
+        </Link>
+      </div>
+    </div>
+  );
+
   return (
     <section id="specialties-grid" className="w-full bg-[#FFFFFF] pt-12 pb-20 lg:pb-28">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
@@ -52,28 +76,17 @@ export default function SpecialtiesGrid() {
             </h3>
           </div>
 
-          {/* Right 2x2 Grid */}
+          {/* Right Columns: Column 1 on left, Column 2 on right (stacked on mobile) */}
           <div className="lg:w-[68%] grid grid-cols-1 sm:grid-cols-2 gap-x-12 xl:gap-x-16 gap-y-12 lg:gap-y-14">
-            {specialties.map((item) => (
-              <div key={item.title} className="flex flex-col justify-between items-start">
-                <div>
-                  <h4 className="text-2xl sm:text-[26px] font-light text-[#2B2B2B] font-serif mb-4">
-                    {item.title}
-                  </h4>
-                  <p className="text-[15px] sm:text-[16px] text-[#444444] font-light leading-[1.85]">
-                    {item.description}
-                  </p>
-                </div>
-                <div className="mt-6">
-                  <Link
-                    href={item.href}
-                    className="cta-underline text-[11px] sm:text-[12px] tracking-[0.16em] uppercase font-medium text-[#2B2B2B]"
-                  >
-                    LEARN MORE
-                  </Link>
-                </div>
-              </div>
-            ))}
+            {/* Column 1: Trauma, then Dissociation */}
+            <div className="flex flex-col gap-y-12 lg:gap-y-14">
+              {column1.map(renderCard)}
+            </div>
+
+            {/* Column 2: EMDR, then Special Needs Parenting */}
+            <div className="flex flex-col gap-y-12 lg:gap-y-14">
+              {column2.map(renderCard)}
+            </div>
           </div>
 
         </div>

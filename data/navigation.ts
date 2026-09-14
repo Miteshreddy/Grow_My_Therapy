@@ -16,7 +16,6 @@ export const headerNavItems: NavItem[] = [
       { title: 'Jennifer Anderson, LMFT', href: '/jennifer-anderson' },
       { title: 'Candace Bletscher, AMFT', href: '/candace-bletscher' },
       { title: 'Heather Williams-Baumgart, AMFT', href: '/heather-williams-baumgart' },
-      { title: 'Michaela Gorospe, AMFT', href: '/michaela-gorospe' },
       { title: 'Samantha Johnson, AMFT', href: '/samantha-johnson' },
       { title: 'Autumn Bodily, AMFT', href: '/autumn-bodily' },
       { title: 'Andrea Watkins, APCC', href: '/andrea-watkins' },

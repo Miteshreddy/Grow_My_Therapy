@@ -5,20 +5,26 @@ export default function QuoteBanner() {
   return (
     <section
       id="quote-banner"
-      className="relative w-full min-h-[480px] sm:min-h-[540px] lg:min-h-[620px] flex items-end overflow-hidden"
+      className="relative w-full min-h-[480px] sm:min-h-[540px] lg:min-h-[620px] flex items-end overflow-hidden bg-[#2B2B2B]"
+      style={{
+        backgroundImage: "url('/images/quote-bg.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
-      {/* Background Image */}
+      {/* Background Image with Next.js optimization and unoptimized safety */}
       <Image
-        src="/images/quote-bg.png"
+        src="/images/quote-bg.jpg"
         alt="Children joyfully running on wide sandy beach"
         fill
         sizes="100vw"
         className="object-cover object-center"
         priority
+        unoptimized
       />
 
-      {/* Dark tint overlay */}
-      <div className="absolute inset-0 bg-black/35 pointer-events-none" />
+      {/* Dark tint overlay matching original 0.54 opacity */}
+      <div className="absolute inset-0 bg-black/[0.54] pointer-events-none" />
 
       {/* Quote Content positioned in the lower area */}
       <div className="relative z-10 w-full max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14 pb-14 sm:pb-16 lg:pb-20">
