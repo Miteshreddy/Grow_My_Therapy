@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'PrintedMoments';
+  src: url('/fonts/printedmoments-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-bg-sand: #EFECE6;
+  --color-bg-white: #FFFFFF;
+  --color-text-charcoal: #2B2B2B;
+  --color-text-muted: #555555;
+  --color-teal-accent: #86B3B3;
+  --color-teal-dark: #64938D;
+  --color-border-subtle: #E5E0D8;
+}
+
+@theme {
+  --color-sand: #EFECE6;
+  --color-charcoal: #2B2B2B;
+  --color-muted: #555555;
+  --color-teal-accent: #86B3B3;
+  --color-teal-dark: #64938D;
+  --color-border-subtle: #E5E0D8;
+
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-mulish), Mulish, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-script: "PrintedMoments", "Caveat", cursive;
+}
+
+body {
+  background-color: #EFECE6;
+  color: #2B2B2B;
+  font-family: var(--font-mulish), Mulish, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+}
+
+/* Custom script style to match original Squarespace exactly */
+.font-script {
+  font-family: "PrintedMoments", "Caveat", cursive !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  color: #86B3B3;
+  line-height: 0.8;
+  display: inline-block;
+}
+
+/* Nav link hover underline */
+.nav-link-hover {
+  position: relative;
+}
+.nav-link-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2B2B2B;
+  transition: width 0.3s ease;
+}
+.nav-link-hover:hover::after {
+  width: 100%;
+}
+
+/* Underlined action links matching Squarespace */
+.cta-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #2B2B2B;
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+}
+.cta-underline:hover {
+  opacity: 0.7;
+}
+
+/* Pill buttons */
+.btn-pill-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2B2B2B;
+  border-radius: 9999px;
+  padding: 0.55rem 1.85rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.btn-pill-outline:hover {
+  background-color: #2B2B2B;
+  color: #FFFFFF;
+}
