@@ -4,11 +4,11 @@ import { drMayaData } from '@/data/drMayaContent';
 
 export default function OurOffice() {
   return (
-    <section id="office" className="w-full bg-[#F3EFEA] py-20 lg:py-28 border-b border-[#E5E0D8]/60">
+    <section id="office" className="w-full bg-[#F3EFEA] py-16 sm:py-18 lg:py-24 border-b border-[#E5E0D8]/60">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-14 lg:mb-18">
+        <div className="max-w-3xl mb-10 lg:mb-14">
           <p className="text-[11px] sm:text-[12px] tracking-[0.2em] uppercase text-[#C47D63] font-medium mb-3">
             {drMayaData.office.eyebrow}
           </p>
@@ -29,7 +29,7 @@ export default function OurOffice() {
               <h3 className="font-serif text-2xl text-[#2C3E35] mb-4 font-normal">
                 Designed for Calm &amp; Emotional Safety
               </h3>
-              <p className="text-[15px] text-[#565C58] font-light leading-[1.85] mb-6">
+              <p className="text-[15px] sm:text-[16px] text-[#565C58] font-light leading-[1.85] mb-6">
                 {drMayaData.office.description}
               </p>
               
@@ -64,10 +64,10 @@ export default function OurOffice() {
               </div>
             </div>
 
-            {/* Office Features List */}
+            {/* Office Features List - enhanced readability */}
             <div className="space-y-3 px-2">
               {drMayaData.office.features.map((feat, idx) => (
-                <div key={idx} className="flex items-center gap-3 text-sm text-[#565C58]">
+                <div key={idx} className="flex items-center gap-3 text-[14px] sm:text-[15px] text-[#565C58]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C47D63] flex-shrink-0" />
                   <span>{feat}</span>
                 </div>

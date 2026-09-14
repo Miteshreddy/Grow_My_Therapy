@@ -6,12 +6,12 @@ export default function PhilosophySection() {
   return (
     <section
       id="philosophy"
-      className="w-full bg-[#F3EFEA] py-16 sm:py-20 lg:py-28 border-t border-[#E5E0D8]/60"
+      className="w-full bg-[#F3EFEA] py-12 sm:py-16 lg:py-22 border-t border-[#E5E0D8]/60"
     >
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         
         {/* Eyebrow + Main Section H2 */}
-        <div className="max-w-3xl lg:max-w-[840px] mb-12 lg:mb-16">
+        <div className="max-w-3xl lg:max-w-[840px] mb-8 sm:mb-10 lg:mb-12">
           <p className="text-[11px] sm:text-[12px] tracking-[0.2em] uppercase text-[#C47D63] font-medium mb-3">
             {drMayaData.resonance.eyebrow}
           </p>

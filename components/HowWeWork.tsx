@@ -4,7 +4,7 @@ import { drMayaData } from '@/data/drMayaContent';
 
 export default function HowWeWork() {
   return (
-    <section id="approach" className="w-full bg-[#F3EFEA] py-16 sm:py-20 lg:py-28">
+    <section id="approach" className="w-full bg-[#F3EFEA] py-12 sm:py-16 lg:py-22">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-14 xl:gap-20">
           
@@ -44,7 +44,7 @@ export default function HowWeWork() {
                   <h4 className="font-sans text-[12px] tracking-[0.12em] uppercase font-semibold text-[#2C3E35] mb-2">
                     Cognitive Behavioral Therapy (CBT)
                   </h4>
-                  <p className="text-[14px] sm:text-[15px] text-[#565C58] font-light leading-[1.8]">
+                  <p className="text-[15px] sm:text-[15.5px] text-[#565C58] font-light leading-[1.8]">
                     We examine automatic thoughts, perfectionistic standards, and catastrophic overthinking, giving you clear cognitive frameworks to step back and reframe distress.
                   </p>
                 </div>
@@ -52,7 +52,7 @@ export default function HowWeWork() {
                   <h4 className="font-sans text-[12px] tracking-[0.12em] uppercase font-semibold text-[#2C3E35] mb-2">
                     EMDR Therapy
                   </h4>
-                  <p className="text-[14px] sm:text-[15px] text-[#565C58] font-light leading-[1.8]">
+                  <p className="text-[15px] sm:text-[15.5px] text-[#565C58] font-light leading-[1.8]">
                     A structured, research-backed protocol that helps reprocess painful memories, easing the emotional and somatic charge so they no longer disrupt your present life.
                   </p>
                 </div>
@@ -64,7 +64,7 @@ export default function HowWeWork() {
                   <h4 className="font-sans text-[12px] tracking-[0.12em] uppercase font-semibold text-[#2C3E35] mb-2">
                     Mindfulness-Based Practices
                   </h4>
-                  <p className="text-[14px] sm:text-[15px] text-[#565C58] font-light leading-[1.8]">
+                  <p className="text-[15px] sm:text-[15.5px] text-[#565C58] font-light leading-[1.8]">
                     Cultivating real-time awareness and non-judgmental acceptance to untangle from panic, emotional reactivity, and constant internal urgency.
                   </p>
                 </div>
@@ -72,7 +72,7 @@ export default function HowWeWork() {
                   <h4 className="font-sans text-[12px] tracking-[0.12em] uppercase font-semibold text-[#2C3E35] mb-2">
                     Body-Oriented (Somatic) Work
                   </h4>
-                  <p className="text-[14px] sm:text-[15px] text-[#565C58] font-light leading-[1.8]">
+                  <p className="text-[15px] sm:text-[15.5px] text-[#565C58] font-light leading-[1.8]">
                     Because chronic stress lives in the body, we incorporate physiological regulation to help you release physical tension, improve sleep, and feel grounded.
                   </p>
                 </div>
@@ -93,7 +93,7 @@ export default function HowWeWork() {
 
           {/* Desktop Dune Photo Column: shown on desktop (lg+), aligned at the top */}
           <div className="hidden lg:block w-full lg:w-[42%] xl:w-[40%] flex-shrink-0">
-            <div className="relative w-full lg:h-[620px] xl:h-[660px] rounded-sm overflow-hidden shadow-sm">
+            <div className="relative w-full lg:h-[560px] xl:h-[600px] rounded-sm overflow-hidden shadow-sm">
               <Image
                 src="/images/how-we-work-dunes.jpg"
                 alt="Coastal landscape representing calm and grounded emotional health"

@@ -4,12 +4,12 @@ import { drMayaData } from '@/data/drMayaContent';
 
 export default function AppointmentCTA() {
   return (
-    <section id="contact" className="w-full bg-[#F3EFEA] py-20 lg:py-28 overflow-hidden border-b border-[#E5E0D8]/60">
+    <section id="contact" className="w-full bg-[#F3EFEA] py-16 sm:py-18 lg:py-24 overflow-hidden border-b border-[#E5E0D8]/60">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-12 xl:gap-16">
           
           {/* Left Decorative Image (desktop view) */}
-          <div className="hidden lg:block w-[180px] xl:w-[200px] h-[400px] xl:h-[460px] flex-shrink-0 relative rounded-sm overflow-hidden self-end shadow-sm">
+          <div className="hidden lg:block w-[180px] xl:w-[200px] h-[360px] xl:h-[400px] flex-shrink-0 relative rounded-sm overflow-hidden self-end shadow-sm">
             <Image
               src="/images/shells-left.jpg"
               alt="Hands gently resting on warm sand, reflecting grounding and pause"
@@ -77,7 +77,7 @@ export default function AppointmentCTA() {
           </div>
 
           {/* Right Image Block */}
-          <div className="w-full sm:w-[320px] lg:w-[360px] xl:w-[400px] h-[340px] sm:h-[420px] lg:h-[540px] flex-shrink-0 relative rounded-sm overflow-hidden mt-6 lg:mt-0 self-start shadow-sm">
+          <div className="w-full sm:w-[320px] lg:w-[360px] xl:w-[400px] h-[300px] sm:h-[380px] lg:h-[480px] flex-shrink-0 relative rounded-sm overflow-hidden mt-6 lg:mt-0 self-start shadow-sm">
             <Image
               src="/images/shells-right.jpg"
               alt="Grounded coastal moment reflecting self-compassion and healing"

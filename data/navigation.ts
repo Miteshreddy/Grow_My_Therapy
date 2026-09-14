@@ -50,12 +50,10 @@ export const footerLinks = {
     title: 'Licensed Clinical Psychologist',
     addressLines: ['123th Street 45 W', 'Santa Monica, CA 90401'],
     telehealth: 'Telehealth available across California',
-    serving: 'Serving Santa Monica, West Los Angeles, Venice, Pacific Palisades & all California via Telehealth',
+    serving: 'Serving adults in-person at our Santa Monica office and statewide across California via secure telehealth.',
   },
   legal: [
     { title: 'Privacy Policy', href: '#' },
     { title: 'Terms of Service', href: '#' },
-    { title: 'Notice of Privacy Practices', href: '#' },
-    { title: 'Good Faith Estimate Notice', href: '#' },
   ],
 };

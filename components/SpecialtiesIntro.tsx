@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function SpecialtiesIntro() {
   return (
-    <section id="specialties-intro" className="w-full bg-[#FAF8F5] pt-16 sm:pt-20 lg:pt-28 pb-10 sm:pb-12 overflow-hidden border-t border-[#E5E0D8]/60">
+    <section id="specialties-intro" className="w-full bg-[#FAF8F5] pt-12 sm:pt-16 lg:pt-22 pb-8 sm:pb-10 overflow-hidden border-t border-[#E5E0D8]/60">
       <div className="w-full flex flex-col lg:flex-row items-center">
         
         {/* Left Surf Photo: full bleed to left on desktop, padded on mobile */}

@@ -4,7 +4,7 @@ import { footerLinks } from '@/data/navigation';
 
 export default function Footer() {
   return (
-    <footer id="footer" className="w-full bg-[#FAF8F5] pt-20 pb-16 lg:pt-24 lg:pb-20 border-t border-[#E5E0D8]">
+    <footer id="footer" className="w-full bg-[#FAF8F5] pt-16 pb-12 lg:pt-20 lg:pb-16 border-t border-[#E5E0D8]">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 xl:gap-12">
           

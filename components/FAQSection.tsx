@@ -11,11 +11,11 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faqs" className="w-full bg-[#FAF8F5] py-20 lg:py-28 border-b border-[#E5E0D8]/60">
+    <section id="faqs" className="w-full bg-[#FAF8F5] py-16 sm:py-18 lg:py-24 border-b border-[#E5E0D8]/60">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         
         {/* Section Header */}
-        <div className="max-w-2xl mb-14 lg:mb-18">
+        <div className="max-w-2xl mb-10 lg:mb-14">
           <p className="text-[11px] sm:text-[12px] tracking-[0.2em] uppercase text-[#C47D63] font-medium mb-3">
             FREQUENTLY ASKED QUESTIONS
           </p>

@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="w-full bg-[#FAF8F5] pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden border-b border-[#E5E0D8]/60"
+      className="w-full bg-[#FAF8F5] pt-6 pb-12 lg:pt-10 lg:pb-20 overflow-hidden border-b border-[#E5E0D8]/60"
     >
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14 xl:gap-16">

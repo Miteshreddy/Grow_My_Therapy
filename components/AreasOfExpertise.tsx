@@ -4,7 +4,7 @@ import { drMayaData } from '@/data/drMayaContent';
 
 export default function AreasOfExpertise() {
   return (
-    <section id="about" className="w-full bg-[#FAF8F5] py-20 lg:py-28 border-b border-[#E5E0D8]/60">
+    <section id="about" className="w-full bg-[#FAF8F5] py-16 sm:py-18 lg:py-24 border-b border-[#E5E0D8]/60">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16 xl:gap-20">
           

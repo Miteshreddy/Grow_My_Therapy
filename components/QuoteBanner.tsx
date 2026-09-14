@@ -6,7 +6,7 @@ export default function QuoteBanner() {
   return (
     <section
       id="quote-banner"
-      className="relative w-full min-h-[480px] sm:min-h-[540px] lg:min-h-[620px] flex items-end overflow-hidden bg-[#1F2D26]"
+      className="relative w-full min-h-[420px] sm:min-h-[480px] lg:min-h-[540px] flex items-end overflow-hidden bg-[#1F2D26]"
       style={{
         backgroundImage: "url('/images/quote-bg.jpg')",
         backgroundSize: 'cover',
@@ -28,7 +28,7 @@ export default function QuoteBanner() {
       <div className="absolute inset-0 bg-[#16221C]/65 pointer-events-none" />
 
       {/* Quote Content positioned in the lower area */}
-      <div className="relative z-10 w-full max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14 pb-14 sm:pb-16 lg:pb-22">
+      <div className="relative z-10 w-full max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14 pb-10 sm:pb-12 lg:pb-18">
         <div className="max-w-3xl">
           <p className="text-[11px] sm:text-[12px] tracking-[0.2em] uppercase text-[#DDA18E] font-medium mb-4">
             A GUIDING PRINCIPLE

@@ -27,7 +27,7 @@ export default function SpecialtiesGrid() {
   );
 
   return (
-    <section id="specialties-grid" className="w-full bg-[#FAF8F5] pt-12 pb-20 lg:pb-28 border-b border-[#E5E0D8]/60">
+    <section id="specialties-grid" className="w-full bg-[#FAF8F5] pt-8 pb-16 lg:pb-22 border-b border-[#E5E0D8]/60">
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-12 xl:px-14">
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 xl:gap-24">
           

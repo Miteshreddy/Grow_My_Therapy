@@ -29,7 +29,7 @@ export const drMayaData = {
     state: 'CA',
     zip: '90401',
     fullAddress: '123th Street 45 W, Santa Monica, CA 90401',
-    region: 'Santa Monica & Greater Los Angeles',
+    region: 'Santa Monica, California',
     telehealthCoverage: 'Available throughout California via secure telehealth',
   },
   contact: {
@@ -65,7 +65,7 @@ export const drMayaData = {
         'Addressing bodily tension, sleep difficulties, and panic symptoms',
         'Practical tools combined with deep insight into underlying triggers',
       ],
-      image: '/images/adults.jpg',
+      image: '/images/adult-calm.jpg',
     },
     {
       id: 'trauma-emdr',
@@ -78,7 +78,7 @@ export const drMayaData = {
         'Careful pacing centered on emotional safety and stabilization',
         'Evidence-based EMDR and somatic regulation techniques',
       ],
-      image: '/images/couples.jpg',
+      image: '/images/adult-reflection.jpg',
     },
     {
       id: 'burnout-perfectionism',
@@ -91,7 +91,7 @@ export const drMayaData = {
         'Untangling perfectionism, high internal demands, and guilt',
         'Cultivating genuine resilience and a healthier relationship with work',
       ],
-      image: '/images/children.jpg',
+      image: '/images/adult-creative.jpg',
     },
   ] as ServiceItem[],
   quoteBanner: {
